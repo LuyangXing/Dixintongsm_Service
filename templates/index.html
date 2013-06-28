@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block navactive %}
+              <li class="active"><a href="index">首页</a></li>
+              <li><a href="about">关于我们</a></li>
+              <li><a href="contact">联系我们</a></li>
+              <li><a href="dashboard">仪表盘</a></li>
+              <li><a href="tracking">跟踪</a></li>
+              <li><a href="record">记录</a></li>
+{#              <li class="dropdown">#}
+{#                <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<b class="caret"></b></a>#}
+{#                <ul class="dropdown-menu">#}
+{#                  <li><a href="#">行为1</a></li>#}
+{#                  <li><a href="#">行为2</a></li>#}
+{#                  <li><a href="#">行为3</a></li>#}
+{#                  <li class="divider"></li>#}
+{#                  <li class="nav-header">标题</li>#}
+{#                  <li><a href="#">链接1</a></li>#}
+{#                  <li><a href="#">链接2</a></li>#}
+{#                </ul>#}
+{#              </li>#}
+{% endblock %}
+
+{% block content %}
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>你好!</h1>
+        <p></p>
+        <p>这是一个专属北京迪信通数码专营淘宝商城的售后服务系统，可以处理顾客售后信息等操作。</p>
+        <p>欢迎免费使用……</p>
+        <p><a href="dashboard" class="btn btn-primary btn-large">开始使用 &raquo;</a></p>
+      </div>
+{% endblock %}

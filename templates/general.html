@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <header class="subhead">
+      <div class="container">
+        {% block content_subtitle %}
+        {% endblock %}
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                {% block content_sidebar %}
+                {% endblock %}
+            </div>
+
+            <div class="span9">
+                <div class="container-fluid">
+                    {% block content_con %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
