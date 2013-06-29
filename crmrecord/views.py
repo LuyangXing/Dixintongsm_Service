@@ -38,3 +38,23 @@ def logout_v(request):
 @login_required(login_url='/index')
 def dashboard(request):
     return render_to_response('dashboard.html', context_instance=RequestContext(request))
+
+@login_required(login_url='/index')
+def record_seacher(request):
+    return render_to_response('record-seacher.html', context_instance=RequestContext(request))
+
+@csrf_protect
+def record_mid_searcher(request):
+    dingdanid = request.POST['dingdanid']
+    wangwangid = request.POST['wangwangid']
+    if dingdanid == "dd123456" or wangwangid == "ww123456":
+        return render_to_response('record-patcher.html', context_instance=RequestContext(request))
+    else:
+        return render_to_response('record-creater.html', context_instance=RequestContext(request))
+
+def record_mid_creater(request):
+    pass
+
+def record_mid_patcher(request):
+    pass
+

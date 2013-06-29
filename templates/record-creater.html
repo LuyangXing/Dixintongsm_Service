@@ -1,0 +1,107 @@
+{% extends "general.html" %}
+
+{% block navactive %}
+              <li><a href="index">首页</a></li>
+              <li><a href="about">关于我们</a></li>
+              <li><a href="contact">联系我们</a></li>
+              <li><a href="dashboard">仪表盘</a></li>
+              <li><a href="tracking">支持</a></li>
+              <li class="active"><a href="record">记录</a></li>
+{% endblock %}
+
+{% block content_subtitle %}
+        <h1>跟踪</h1>
+        <p class="lead">这里是记录模块，可以在此记录信息。</p>
+{% endblock %}
+
+{% block content_sidebar %}
+        <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">消息</li>
+              <li class="active"><a href="record">消息查询</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+        </div><!--/.well -->
+{% endblock %}
+
+{% block content_con %}
+
+
+  <form class="form-horizontal">
+    <fieldset>
+        <div id="legend" class="">
+            <legend class="">售后信息创建</legend>
+        </div>
+
+        <div class="control-group">
+            <!-- Text input-->
+            <label class="control-label" for="input01">订单ID</label>
+            <div class="controls">
+                <input placeholder="placeholder" class="input-xlarge" type="text">
+                <p class="help-block">无</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Text input-->
+            <label class="control-label" for="input02">旺旺ID</label>
+            <div class="controls">
+                <input placeholder="placeholder" class="input-xlarge" type="text">
+                <p class="help-block">无</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">订单状态</label>
+            <div class="controls">
+                <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            第一个选项，最好给出将其做为首选的理由
+                </label>
+                <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            第二个选项，如果选译该选项就会取消第一个选项。
+                </label>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Text input-->
+            <label class="control-label" for="input04">负责人</label>
+            <div class="controls">
+                <input placeholder="placeholder" class="input-xlarge" type="text">
+                <p class="help-block">无</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Text input-->
+            <label class="control-label" for="input05">所需支持</label>
+            <div class="controls">
+                <input placeholder="placeholder" class="input-xlarge" type="text">
+                <p class="help-block">无</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Textarea -->
+            <label class="control-label">问题描述</label>
+            <div class="controls">
+                <div class="textarea">
+                    <textarea type="" class=""> </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"></label>
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-success">提交</button>
+            </div>
+        </div>
+    </fieldset>
+  </form>
+
+
+{% endblock %}

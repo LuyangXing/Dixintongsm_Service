@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.conf.urls.static import static
 
-from crmrecord.views import index, dashboard
+from crmrecord.views import index, dashboard, record_seacher, record_mid_searcher
 from crmrecord.views import login_v, logout_v
 
 
@@ -24,9 +24,12 @@ urlpatterns = patterns('',
     (r'^index$', index),
     (r'^dashboard$', dashboard),
     (r'^tracking$', index),
-    (r'^record$', index),
+    (r'^record$', record_seacher),
     url(r'^login$', view=login_v, name="login_v"),
     url(r'^logout$', view=logout_v, name="logout_v"),
+
+    url(r'^recordmidsearcher$',view=record_mid_searcher, name="record_mid_searcher"),
+
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
