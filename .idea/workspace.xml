@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd078ccb-4064-425c-91aa-8790edc5e082" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bootstrap-wysiwyg/bootstrap-wysiwyg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bootstrap-wysiwyg/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/record.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/dashboard.html" afterPath="$PROJECT_DIR$/templates/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/general.html" afterPath="$PROJECT_DIR$/templates/general.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crmrecord/models.py" afterPath="$PROJECT_DIR$/crmrecord/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record-creater.html" afterPath="$PROJECT_DIR$/templates/record-creater.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record-patcher.html" afterPath="$PROJECT_DIR$/templates/record-patcher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record-seacher.html" afterPath="$PROJECT_DIR$/templates/record-seacher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bjdxtmall/urls.py" afterPath="$PROJECT_DIR$/bjdxtmall/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crmrecord/views.py" afterPath="$PROJECT_DIR$/crmrecord/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bjdxtmall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372652153304" ignored="false" />
+    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372652182812" ignored="false" />
     <file path="/settings.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372391832855" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318404164" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/test.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318811261" ignored="false" />
@@ -69,7 +56,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="41" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.5328467">
+            <state line="63" column="41" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.5855615">
               <folding>
                 <element signature="e#42#89#0" expanded="true" />
               </folding>
@@ -437,22 +424,27 @@
       <created>1372307917728</created>
       <updated>1372307917728</updated>
     </task>
+    <task id="LOCAL-00001" summary="update record-seacher creater">
+      <created>1372652188725</created>
+      <updated>1372652188725</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="115" y="27" width="1189" height="739" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25065732" sideWeight="0.74067795" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25065732" sideWeight="0.6779661" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32252252" sideWeight="0.4508772" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25932205" sideWeight="0.5491228" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3220339" sideWeight="0.4508772" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25932205" sideWeight="0.5491228" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -624,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="41" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.5328467">
+        <state line="63" column="41" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.5855615">
           <folding>
             <element signature="e#42#89#0" expanded="true" />
           </folding>
