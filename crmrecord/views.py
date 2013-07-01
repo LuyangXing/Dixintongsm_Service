@@ -1,3 +1,4 @@
+# coding=utf-8
 # Create your views here.
 
 from django.shortcuts import render_to_response
@@ -7,6 +8,9 @@ from django.core.context_processors import csrf
 from django.views.decorators.csrf import csrf_protect
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
+
+from crmrecord.models import RecordList
+import datetime
 
 
 
@@ -47,14 +51,30 @@ def record_seacher(request):
 def record_mid_searcher(request):
     dingdanid = request.POST['dingdanid']
     wangwangid = request.POST['wangwangid']
-    if dingdanid == "dd123456" or wangwangid == "ww123456":
+    if dingdanid == RecordList.objects.filter(cddid=dingdanid) or RecordList.objects.filter(cwwid=wangwangid):
         return render_to_response('record-patcher.html', context_instance=RequestContext(request))
     else:
         return render_to_response('record-creater.html', context_instance=RequestContext(request))
 
+@csrf_protect
 def record_mid_creater(request):
-    pass
+    qcddid = request.POST['qcddid']
+    qcwwid = request.POST['qcwwid']
+    qcstate = request.POST['qcstate']
+    qccharger = request.POST['qccharger']
+    qcdemand = request.POST['qcdemand']
+    qcnotes = request.POST['qcnotes']
 
-def record_mid_patcher(request):
-    pass
+    p = RecordList(cddid=qcddid,
+                   cwwid=qcwwid,
+                   cdatetime=datetime.datetime.now(),
+                   cstate=qcstate,
+                   ccharger=qccharger,
+                   cdemand=qcdemand,
+                   cnotes=qcnotes)
+    p.save()
+    return render_to_response('record-creater.html', context_instance=RequestContext(request))
+
+# def record_mid_patcher(request):
+#     pass
 

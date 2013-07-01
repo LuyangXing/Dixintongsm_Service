@@ -1,3 +1,4 @@
+# coding=utf-8
 from django.db import models
 from django.utils.safestring import mark_safe
 
@@ -7,8 +8,8 @@ class RecordList(models.Model):
     cddid=models.CharField(max_length=20)
     cwwid=models.CharField(max_length=50)
     cdatetime=models.DateTimeField()
-    cstate=models.CharField(max_length=20)
-    ccharger=models.CharField(max_length=20)
+    cstate=models.IntegerField(max_length=1)
+    ccharger=models.CharField(max_length=10)
     cdemand=models.CharField(max_length=50)
     cnotes=models.TextField()
 

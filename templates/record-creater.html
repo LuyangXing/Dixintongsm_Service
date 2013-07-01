@@ -14,20 +14,10 @@
         <p class="lead">这里是记录模块，可以在此记录信息。</p>
 {% endblock %}
 
-{% block content_sidebar %}
-        <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">消息</li>
-              <li class="active"><a href="record">消息查询</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-        </div><!--/.well -->
-{% endblock %}
-
 {% block content_con %}
 
 
-  <form class="form-horizontal">
+  <form action="{% url "record_mid_creater" %}" method='post' class="form-horizontal">{% csrf_token %}
     <fieldset>
         <div id="legend" class="">
             <legend class="">售后信息创建</legend>
@@ -35,70 +25,47 @@
 
         <div class="control-group">
             <!-- Text input-->
-            <label class="control-label" for="input01">订单ID</label>
-            <div class="controls">
-                <input placeholder="placeholder" class="input-xlarge" type="text">
-                <p class="help-block">无</p>
-            </div>
+            <label class="control-label">订单ID</label>
+            <div class="controls"><input name="qcddid" class="input-xlarge" type="text"></div>
         </div>
 
         <div class="control-group">
-            <!-- Text input-->
-            <label class="control-label" for="input02">旺旺ID</label>
-            <div class="controls">
-                <input placeholder="placeholder" class="input-xlarge" type="text">
-                <p class="help-block">无</p>
-            </div>
+            <label class="control-label">旺旺ID</label>
+            <div class="controls"><input name="qcwwid" class="input-xlarge" type="text"></div>
         </div>
 
         <div class="control-group">
             <label class="control-label">订单状态</label>
             <div class="controls">
                 <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            第一个选项，最好给出将其做为首选的理由
+                    <input type="radio" name="qcstate" value="1" checked>处理中
                 </label>
                 <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            第二个选项，如果选译该选项就会取消第一个选项。
+                    <input type="radio" name="qcstate" value="0">最终搞定
                 </label>
             </div>
         </div>
 
         <div class="control-group">
-            <!-- Text input-->
-            <label class="control-label" for="input04">负责人</label>
-            <div class="controls">
-                <input placeholder="placeholder" class="input-xlarge" type="text">
-                <p class="help-block">无</p>
-            </div>
+            <label class="control-label">负责人</label>
+            <div class="controls"><input name="qccharger" class="input-xlarge" type="text"></div>
         </div>
 
         <div class="control-group">
-            <!-- Text input-->
-            <label class="control-label" for="input05">所需支持</label>
-            <div class="controls">
-                <input placeholder="placeholder" class="input-xlarge" type="text">
-                <p class="help-block">无</p>
-            </div>
+            <label class="control-label">所需支持</label>
+            <div class="controls"><input name="qcdemand" class="input-xlarge" type="text"></div>
         </div>
 
         <div class="control-group">
-            <!-- Textarea -->
             <label class="control-label">问题描述</label>
             <div class="controls">
-                <div class="textarea">
-                    <textarea type="" class=""> </textarea>
-                </div>
+                <div class="textarea"><textarea name="qcnotes" type="" class=""> </textarea></div>
             </div>
         </div>
 
         <div class="control-group">
             <label class="control-label"></label>
-            <!-- Button -->
-            <div class="controls">
-                <button class="btn btn-success">提交</button>
-            </div>
+            <div class="controls"><button class="btn btn-success">提交</button></div>
         </div>
     </fieldset>
   </form>
