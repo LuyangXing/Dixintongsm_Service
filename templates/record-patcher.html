@@ -25,25 +25,41 @@
 {% block content_con %}
 
     <ul class="thumbnails">
-        <li class="span9">
-            <h3>订单号：xxoo，旺旺号：xxoo</h3>
-        </li>
 
+        {% for ddid in rof_ddid %}
         <li class="span9">
             <div class="thumbnail">
             <div class="caption" contenteditable="true">
-            <h3>冯诺尔曼结构</h3>
-            <div></div>
+            <h3>需求：{{ ddid.cdemand }}</h3>
+            <small>订单号: {{ ddid.cddid }}  旺旺号: {{ ddid.cwwid }}</small>
+                <br/>
+            <small>时间： {{ ddid.cdatetime|date:"Y年,n月,j日（周w） P" }}  负责人: {{ ddid.ccharger }}</small>
+            <small>描述：</small>
+                <br/><br/>
+            <div>{{ ddid.cnotes|safe }}</div>
             </div>
             </div>
         </li>
+        {% endfor %}
 
         <li class="span9">
-  <form name="form1" action="{% url "record_mid_patcher" %}" method='post' class="form-horizontal">{% csrf_token %}
+  <form name="form1" action="{% url "record_mid_patcher" %}" method='post' class="form-horizontal">{% csrf_token %}  <form name="form1" action="{% url "record_mid_creater" %}" method='post' class="form-horizontal">{% csrf_token %}
     <fieldset>
         <div id="legend" class="">
             <legend class="">售后信息创建</legend>
         </div>
+
+        <div class="control-group">
+            <!-- Text input-->
+            <label class="control-label">订单ID</label>
+            <div class="controls"><input name="qcddid" class="input-xlarge" type="text"></div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">旺旺ID</label>
+            <div class="controls"><input name="qcwwid" class="input-xlarge" type="text"></div>
+        </div>
+
         <div class="control-group">
             <label class="control-label">订单状态</label>
             <div class="controls">

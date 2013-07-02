@@ -49,6 +49,10 @@ def dashboard(request):
 def record_seacher(request):
     return render_to_response('record-seacher.html', context_instance=RequestContext(request))
 
+@login_required(login_url='/index')
+def record_creater(request):
+    return render_to_response('record-creater.html', context_instance=RequestContext(request))
+
 def record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes):
     p = RecordList(cddid=qcddid,
                    cwwid=qcwwid,
@@ -69,7 +73,7 @@ def record_mid_searcher(request):
     try:
         if gcddid == '':
             return render_to_response('record-creater.html', context_instance=RequestContext(request))
-        else:
+        elif gcddid in rof_ddid[0].cddid:
             t = loader.get_template("record-patcher.html")
             c = RequestContext(request,{'rof_ddid': rof_ddid})
             return HttpResponse(t.render(c))
@@ -95,8 +99,8 @@ def record_mid_patcher(request):
     qccharger = request.POST['qccharger']
     qcdemand = request.POST['qcdemand']
     qcnotes = request.POST['qcnotes']
-    record_add(qcddid,qcwwid.cwwid,qcstate,qccharger,qcdemand,qcnotes)
-    return render_to_response('record-creater.html', context_instance=RequestContext(request))
+    record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
+    return render_to_response('record-patcher.html', context_instance=RequestContext(request))
 
 
 
