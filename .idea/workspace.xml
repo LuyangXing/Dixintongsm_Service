@@ -2,27 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd078ccb-4064-425c-91aa-8790edc5e082" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/promo-868x350.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/bootstrap-wysiwyg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap-wysiwyg-master/republish.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/general.html" afterPath="$PROJECT_DIR$/templates/general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record-creater.html" afterPath="$PROJECT_DIR$/templates/record-creater.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record-patcher.html" afterPath="$PROJECT_DIR$/templates/record-patcher.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record-seacher.html" afterPath="$PROJECT_DIR$/templates/record-seacher.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bjdxtmall/settings.py" afterPath="$PROJECT_DIR$/bjdxtmall/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bjdxtmall/urls.py" afterPath="$PROJECT_DIR$/bjdxtmall/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crmrecord/views.py" afterPath="$PROJECT_DIR$/crmrecord/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bjdxtmall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372652182812" ignored="false" />
-    <file path="/settings.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372391832855" ignored="false" />
+    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372744704894" ignored="false" />
+    <file path="/settings.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372668805910" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318404164" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/test.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318811261" ignored="false" />
     <file path="/test.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318811261" ignored="false" />
-    <file path="/urls.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372405021985" ignored="false" />
-    <file path="/views.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372650485007" ignored="false" />
-    <file path="/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372650968093" ignored="false" />
+    <file path="/urls.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372736103549" ignored="false" />
+    <file path="/views.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372738182361" ignored="false" />
+    <file path="/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372658789423" ignored="false" />
     <file path="/index.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372401048715" ignored="false" />
     <file path="/record.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372401063281" ignored="false" />
     <file path="/dashboard.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372401056901" ignored="false" />
     <file path="/404.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372391544513" ignored="false" />
     <file path="/500.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372391477282" ignored="false" />
-    <file path="/record-seacher.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372405075240" ignored="false" />
-    <file path="/record-patcher.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372402813170" ignored="false" />
+    <file path="/record-seacher.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372735186437" ignored="false" />
+    <file path="/record-patcher.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372738573912" ignored="false" />
     <file path="/models.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372651651354" ignored="false" />
-    <file path="/record-creater.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372651604824" ignored="false" />
+    <file path="/record-creater.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372738495013" ignored="false" />
+    <file path="/general.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372659800913" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +62,16 @@
         <entry file="file://$PROJECT_DIR$/crmrecord/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="44" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#15#43#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="41" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.5855615">
-              <folding>
-                <element signature="e#42#89#0" expanded="true" />
-              </folding>
+            <state line="61" column="0" selection-start="2095" selection-end="2743" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,10 +79,8 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bjdxtmall/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="34" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state line="33" column="20" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +88,25 @@
       <file leaf-file-name="record-creater.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/record-creater.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="45" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.875">
+            <state line="125" column="35" selection-start="6263" selection-end="6263" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="record-seacher.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/record-seacher.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="14" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="record-patcher.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/record-patcher.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="61" selection-start="857" selection-end="857" vertical-scroll-proportion="0.028301887">
               <folding />
             </state>
           </provider>
@@ -110,27 +138,27 @@
         <option value="$PROJECT_DIR$/templates/message.html" />
         <option value="$PROJECT_DIR$/templates/500.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
-        <option value="$PROJECT_DIR$/bjdxtmall/settings.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/record.html" />
-        <option value="$PROJECT_DIR$/templates/record-seacher.html" />
         <option value="$PROJECT_DIR$/templates/sidebar.html" />
-        <option value="$PROJECT_DIR$/templates/general.html" />
         <option value="$PROJECT_DIR$/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/templates/record-patcher.html" />
-        <option value="$PROJECT_DIR$/bjdxtmall/urls.py" />
-        <option value="$PROJECT_DIR$/crmrecord/views.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/record-creater.html" />
         <option value="$PROJECT_DIR$/crmrecord/models.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/general.html" />
+        <option value="$PROJECT_DIR$/bjdxtmall/settings.py" />
+        <option value="$PROJECT_DIR$/templates/record-seacher.html" />
+        <option value="$PROJECT_DIR$/bjdxtmall/urls.py" />
+        <option value="$PROJECT_DIR$/templates/record-creater.html" />
+        <option value="$PROJECT_DIR$/templates/record-patcher.html" />
+        <option value="$PROJECT_DIR$/crmrecord/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="115" />
-    <option name="y" value="27" />
-    <option name="width" value="1189" />
-    <option name="height" value="739" />
+    <option name="x" value="125" />
+    <option name="y" value="28" />
+    <option name="width" value="1141" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -190,48 +218,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crmrecord" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bjdxtmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -258,6 +244,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/bootstrap-wysiwyg" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/media/img" />
@@ -432,24 +419,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="27" width="1189" height="739" extended-state="0" />
+    <frame x="125" y="28" width="1141" height="740" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282572" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25065732" sideWeight="0.6779661" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19396158" sideWeight="0.7554806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3220339" sideWeight="0.4508772" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25932205" sideWeight="0.5491228" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2571912" sideWeight="0.45106384" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2445194" sideWeight="0.5489362" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -515,17 +502,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/env27/local/lib/python2.7/site-packages/django/template/defaulttags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="401" column="0" selection-start="14465" selection-end="14465" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/500.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="299" vertical-scroll-proportion="-0.0">
@@ -547,20 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/general.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="143" selection-end="143" vertical-scroll-proportion="0.2760736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/record-patcher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="483" selection-end="483" vertical-scroll-proportion="0.25414366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="14" selection-start="487" selection-end="487" vertical-scroll-proportion="-4.5339804">
@@ -568,9 +534,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/record-seacher.html">
+    <entry file="file://$PROJECT_DIR$/static/bootstrap-wysiwyg-master/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="508" selection-end="508" vertical-scroll-proportion="-1.306773">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="18" selection-start="3965" selection-end="3965" vertical-scroll-proportion="-35.083332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap-wysiwyg-master/bootstrap-wysiwyg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="18" selection-start="647" selection-end="653" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="13" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.8357934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap-wysiwyg-master/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjdxtmall/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1760" selection-end="1774" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -578,48 +580,42 @@
     <entry file="file://$PROJECT_DIR$/crmrecord/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="44" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#43#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bjdxtmall/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="34" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjdxtmall/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="41" selection-end="55" vertical-scroll-proportion="0.053003535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="-5.3127413">
+        <state line="33" column="20" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/record-creater.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="45" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.875">
+        <state line="125" column="35" selection-start="6263" selection-end="6263" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="41" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.5855615">
-          <folding>
-            <element signature="e#42#89#0" expanded="true" />
-          </folding>
+        <state line="61" column="0" selection-start="2095" selection-end="2743" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/record-seacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/record-patcher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="61" selection-start="857" selection-end="857" vertical-scroll-proportion="0.028301887">
+          <folding />
         </state>
       </provider>
     </entry>

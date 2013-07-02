@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block headercss %}
+    {% block headercss_1 %}
+    {% endblock %}
+{% endblock %}
+
 {% block content %}
 
     <header class="subhead">
@@ -32,4 +37,9 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block footerjs %}
+    {% block footerjs_1 %}
+    {% endblock %}
 {% endblock %}

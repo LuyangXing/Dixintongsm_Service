@@ -12,6 +12,8 @@ from django.contrib.auth.decorators import login_required
 from crmrecord.models import RecordList
 import datetime
 
+from django.http import HttpResponse
+from django.template import loader
 
 
 def index(request):
@@ -47,14 +49,33 @@ def dashboard(request):
 def record_seacher(request):
     return render_to_response('record-seacher.html', context_instance=RequestContext(request))
 
+def record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes):
+    p = RecordList(cddid=qcddid,
+                   cwwid=qcwwid,
+                   cdatetime=datetime.datetime.now(),
+                   cstate=qcstate,
+                   ccharger=qccharger,
+                   cdemand=qcdemand,
+                   cnotes=qcnotes)
+    p.save()
+
 @csrf_protect
 def record_mid_searcher(request):
-    dingdanid = request.POST['dingdanid']
-    wangwangid = request.POST['wangwangid']
-    if dingdanid == RecordList.objects.filter(cddid=dingdanid) or RecordList.objects.filter(cwwid=wangwangid):
-        return render_to_response('record-patcher.html', context_instance=RequestContext(request))
-    else:
+    gcddid = request.POST['gcddid']
+    print gcddid
+    gcddid = gcddid.replace(" ", "")
+    print gcddid
+    rof_ddid = RecordList.objects.filter(cddid__contains=gcddid)
+    try:
+        if gcddid == '':
+            return render_to_response('record-creater.html', context_instance=RequestContext(request))
+        else:
+            t = loader.get_template("record-patcher.html")
+            c = RequestContext(request,{'rof_ddid': rof_ddid})
+            return HttpResponse(t.render(c))
+    except:
         return render_to_response('record-creater.html', context_instance=RequestContext(request))
+
 
 @csrf_protect
 def record_mid_creater(request):
@@ -64,17 +85,18 @@ def record_mid_creater(request):
     qccharger = request.POST['qccharger']
     qcdemand = request.POST['qcdemand']
     qcnotes = request.POST['qcnotes']
-
-    p = RecordList(cddid=qcddid,
-                   cwwid=qcwwid,
-                   cdatetime=datetime.datetime.now(),
-                   cstate=qcstate,
-                   ccharger=qccharger,
-                   cdemand=qcdemand,
-                   cnotes=qcnotes)
-    p.save()
+    record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
     return render_to_response('record-creater.html', context_instance=RequestContext(request))
 
-# def record_mid_patcher(request):
-#     pass
+def record_mid_patcher(request):
+    qcddid = request.POST['qcddid']
+    qcwwid = request.POST['qcwwid']
+    qcstate = request.POST['qcstate']
+    qccharger = request.POST['qccharger']
+    qcdemand = request.POST['qcdemand']
+    qcnotes = request.POST['qcnotes']
+    record_add(qcddid,qcwwid.cwwid,qcstate,qccharger,qcdemand,qcnotes)
+    return render_to_response('record-creater.html', context_instance=RequestContext(request))
+
+
 

@@ -9,9 +9,10 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-
     <link href="{% static "bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "bootstrap/css/bootstrap-responsive.min.css" %}" rel="stylesheet">
+    {% block headercss %}
+    {% endblock %}
     <style type="text/css">
         h1, h2, h3, .masthead p, .subhead p, .marketing h2, .lead
         {
@@ -97,6 +98,8 @@
     <script src="{% static "jquery/jquery-2.0.0.min.js" %}"></script>
     <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
     <script src="{% static "scrollUp/js/jquery.scrollUp.min.js" %}"></script>
+    {% block footerjs %}
+    {% endblock %}
     <script>
         $(function () {
            $.scrollUp({

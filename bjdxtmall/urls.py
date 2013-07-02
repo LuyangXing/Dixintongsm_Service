@@ -3,7 +3,8 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.conf.urls.static import static
 
-from crmrecord.views import index, dashboard, record_seacher, record_mid_searcher, record_mid_creater
+from crmrecord.views import index, dashboard, record_seacher, \
+    record_mid_searcher, record_mid_creater, record_mid_patcher
 from crmrecord.views import login_v, logout_v
 
 
@@ -30,6 +31,7 @@ urlpatterns = patterns('',
 
     url(r'^recordmidsearcher$',view=record_mid_searcher, name="record_mid_searcher"),
     url(r'^recordmidcreater$',view=record_mid_creater, name="record_mid_creater"),
+    url(r'^recordmidpatcher$',view=record_mid_patcher, name="record_mid_patcher"),
 
 )
 
