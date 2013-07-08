@@ -6,7 +6,7 @@ import os
 
 BASE_DIR = os.path.abspath('..')
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (

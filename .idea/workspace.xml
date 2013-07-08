@@ -4,24 +4,28 @@
     <list default="true" id="fd078ccb-4064-425c-91aa-8790edc5e082" name="Default" comment="" />
     <ignored path="bjdxtmall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372834579780" ignored="false" />
-    <file path="/settings.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372835199086" ignored="false" />
+    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373262542554" ignored="false" />
+    <file path="/settings.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373267464488" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318404164" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/test.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318811261" ignored="false" />
     <file path="/test.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318811261" ignored="false" />
-    <file path="/urls.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372747233178" ignored="false" />
-    <file path="/views.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372748668817" ignored="false" />
-    <file path="/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372658789423" ignored="false" />
-    <file path="/index.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372401048715" ignored="false" />
+    <file path="/urls.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373272789050" ignored="false" />
+    <file path="/views.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373303809093" ignored="false" />
+    <file path="/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373268382350" ignored="false" />
+    <file path="/index.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373275068919" ignored="false" />
     <file path="/record.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372401063281" ignored="false" />
-    <file path="/dashboard.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372401056901" ignored="false" />
+    <file path="/dashboard.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373274944991" ignored="false" />
     <file path="/404.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372391544513" ignored="false" />
     <file path="/500.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372391477282" ignored="false" />
     <file path="/record-seacher.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372735186437" ignored="false" />
     <file path="/record-patcher.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372748326484" ignored="false" />
-    <file path="/models.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372651651354" ignored="false" />
+    <file path="/models.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373270676852" ignored="false" />
     <file path="/record-creater.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372738495013" ignored="false" />
-    <file path="/general.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372747343719" ignored="false" />
+    <file path="/general.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373274987798" ignored="false" />
+    <file path="/recordlist.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373275346477" ignored="false" />
+    <file path="/orderlist.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373274927964" ignored="false" />
+    <file path="/recordcreate.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373275297641" ignored="false" />
+    <file path="/recordpatch.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373275193768" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,42 +39,17 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="bjdxtmall" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="4" selection-start="1951" selection-end="1951" vertical-scroll-proportion="-11.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bjdxtmall/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="55" selection-start="464" selection-end="464" vertical-scroll-proportion="0.23809524">
-              <folding>
-                <element signature="e#663#672#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjdxtmall/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="160" selection-end="169" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -93,30 +72,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/500.html" />
-        <option value="$PROJECT_DIR$/templates/404.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/record.html" />
-        <option value="$PROJECT_DIR$/templates/sidebar.html" />
-        <option value="$PROJECT_DIR$/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/crmrecord/models.py" />
         <option value="$PROJECT_DIR$/templates/record-seacher.html" />
-        <option value="$PROJECT_DIR$/templates/record-creater.html" />
-        <option value="$PROJECT_DIR$/bjdxtmall/urls.py" />
-        <option value="$PROJECT_DIR$/templates/general.html" />
-        <option value="$PROJECT_DIR$/crmrecord/views.py" />
         <option value="$PROJECT_DIR$/templates/record-patcher.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/bjdxtmall/settings.py" />
         <option value="$PROJECT_DIR$/bjdxtmall/wsgi.py" />
+        <option value="$PROJECT_DIR$/bjdxtmall/settings.py" />
+        <option value="$PROJECT_DIR$/bjdxtmall/urls.py" />
+        <option value="$PROJECT_DIR$/templates/record-creater.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/general.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/recordpatch.html" />
+        <option value="$PROJECT_DIR$/templates/orderlist.html" />
+        <option value="$PROJECT_DIR$/templates/recordlist.html" />
+        <option value="$PROJECT_DIR$/templates/recordcreate.html" />
+        <option value="$PROJECT_DIR$/crmrecord/views.py" />
+        <option value="$PROJECT_DIR$/crmrecord/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
-    <option name="y" value="28" />
-    <option name="width" value="1141" />
-    <option name="height" value="740" />
+    <option name="x" value="619" />
+    <option name="y" value="3" />
+    <option name="width" value="1058" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -170,13 +149,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -194,6 +173,7 @@
       <recent name="$PROJECT_DIR$/media/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\Documents\GitHub\bjdxtmall\static\bootstrap-paginator\js" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
@@ -207,12 +187,31 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="bjdxtmall" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="bjdxtmall" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -222,8 +221,6 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="bjdxtmall" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
@@ -238,29 +235,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bjdxtmall" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,8 +242,6 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="bjdxtmall" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
@@ -311,8 +283,6 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="bjdxtmall" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
@@ -332,7 +302,7 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -342,6 +312,7 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
@@ -363,18 +334,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="28" width="1141" height="740" extended-state="0" />
+    <frame x="619" y="3" width="1058" height="957" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282572" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20416333" sideWeight="0.8200253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19762123" sideWeight="0.7554806" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21830986" sideWeight="0.82205516" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2571912" sideWeight="0.45106384" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2445194" sideWeight="0.5489362" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17794487" sideWeight="0.444668" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17794487" sideWeight="0.5482897" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -412,7 +383,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -422,10 +393,6 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="update record-seacher creater" />
@@ -439,7 +406,6 @@
     <option name="ACTIVE_VCS_NAME" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="update record-seacher creater" />
@@ -450,113 +416,99 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/404.html">
+    <entry file="file://$PROJECT_DIR$/bjdxtmall/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="298" selection-end="298" vertical-scroll-proportion="0.78397214">
-          <folding />
+        <state line="36" column="0" selection-start="1532" selection-end="1532" vertical-scroll-proportion="1.2975609">
+          <folding>
+            <element signature="e#663#672#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/bjdxtmall/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="298" selection-end="298" vertical-scroll-proportion="0.3442623">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap-wysiwyg-master/LICENSE">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap-wysiwyg-master/bootstrap-wysiwyg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="647" selection-end="653" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap-wysiwyg-master/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="487" selection-end="487" vertical-scroll-proportion="0.6593407">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/general.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="365" selection-end="365" vertical-scroll-proportion="0.3580902">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/record-patcher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1002" selection-end="1599" vertical-scroll-proportion="-2.9166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/record-seacher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="372" selection-end="372" vertical-scroll-proportion="1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/record-creater.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="22" selection-start="1010" selection-end="6564" vertical-scroll-proportion="0.41558442">
+        <state line="12" column="35" selection-start="186" selection-end="186" vertical-scroll-proportion="0.59067357">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bjdxtmall/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="53" selection-start="1099" selection-end="1099" vertical-scroll-proportion="1.1018957">
+        <state line="28" column="32" selection-start="965" selection-end="965" vertical-scroll-proportion="0.39967638">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3373" selection-end="3795" vertical-scroll-proportion="0.46682465">
+        <state line="100" column="77" selection-start="3925" selection-end="3925" vertical-scroll-proportion="0.98191684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="57" selection-start="319" selection-end="319" vertical-scroll-proportion="0.24050634">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="67" selection-start="872" selection-end="872" vertical-scroll-proportion="0.819788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="266" selection-end="266" vertical-scroll-proportion="0.23498233">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recordpatch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="39" selection-start="881" selection-end="881" vertical-scroll-proportion="0.4610052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/orderlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="45" selection-start="453" selection-end="453" vertical-scroll-proportion="0.12969284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recordlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="15" selection-start="92" selection-end="92" vertical-scroll-proportion="0.12687813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recordcreate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="39" selection-start="963" selection-end="981" vertical-scroll-proportion="0.32423207">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crmrecord/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="316" selection-end="316" vertical-scroll-proportion="0.35545024" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="4" selection-start="1951" selection-end="1951" vertical-scroll-proportion="-11.25">
+        <state line="7" column="52" selection-start="203" selection-end="203" vertical-scroll-proportion="0.18181819">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bjdxtmall/settings.py">
+    <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="160" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjdxtmall/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="55" selection-start="464" selection-end="464" vertical-scroll-proportion="0.23809524">
+        <state line="102" column="12" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.33333334">
           <folding>
-            <element signature="e#663#672#0" expanded="true" />
+            <element signature="e#42#89#0" expanded="true" />
           </folding>
         </state>
       </provider>

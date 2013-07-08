@@ -3,8 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.conf.urls.static import static
 
-from crmrecord.views import index, dashboard, record_seacher,record_creater, \
-    record_mid_searcher, record_mid_creater, record_mid_patcher
+from crmrecord.views import index, dashboard, recordlist, recordcreate, recordpatch, orderlist, creater, patcher
 from crmrecord.views import login_v, logout_v
 
 
@@ -22,18 +21,19 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    (r'^index$', index),
-    (r'^dashboard$', dashboard),
-    (r'^tracking$', index),
-    (r'^record$', record_seacher),
-    (r'^recordcreater$', record_creater),
 
     url(r'^login$', view=login_v, name="login_v"),
     url(r'^logout$', view=logout_v, name="logout_v"),
 
-    url(r'^recordmidsearcher$',view=record_mid_searcher, name="record_mid_searcher"),
-    url(r'^recordmidcreater$',view=record_mid_creater, name="record_mid_creater"),
-    url(r'^recordmidpatcher$',view=record_mid_patcher, name="record_mid_patcher"),
+    (r'^index$', index),
+    (r'^dashboard$', dashboard),
+    (r'^recordlist$', recordlist),
+    (r'^recordcreate$', recordcreate),
+    (r'^recordpatch$', recordpatch),
+    (r'orderlist$', orderlist),
+
+    url(r'^creater$',view=creater, name="creater"),
+    url(r'^patcher$',view=patcher, name="patcher"),
 
 )
 

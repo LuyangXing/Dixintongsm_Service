@@ -36,7 +36,6 @@ def login_v(request):
         return render_to_response('index.html', context_instance=RequestContext(request))
         # Return an 'invalid login' error message.
 
-
 def logout_v(request):
     logout(request)
     return render_to_response('index.html', context_instance=RequestContext(request))
@@ -45,12 +44,19 @@ def logout_v(request):
 def dashboard(request):
     return render_to_response('dashboard.html', context_instance=RequestContext(request))
 
-@login_required(login_url='/index')
-def record_seacher(request):
-    return render_to_response('record-seacher.html', context_instance=RequestContext(request))
 
-@login_required(login_url='/index')
-def record_creater(request):
+def recordcreate(request):
+    return render_to_response('recordcreate.html', context_instance=RequestContext(request))
+
+@csrf_protect
+def creater(request):
+    qcddid = request.POST['qcddid']
+    qcwwid = request.POST['qcwwid']
+    qcstate = request.POST['qcstate']
+    qccharger = request.POST['qccharger']
+    qcdemand = request.POST['qcdemand']
+    qcnotes = request.POST['qcnotes']
+    record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
     return render_to_response('record-creater.html', context_instance=RequestContext(request))
 
 def record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes):
@@ -63,8 +69,40 @@ def record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes):
                    cnotes=qcnotes)
     p.save()
 
+
+def recordpatch(request):
+    ngword = NgWord.objects.get(pk=request.POST['id'])
+    pass
+
 @csrf_protect
-def record_mid_searcher(request):
+def patcher(request):
+    qcddid = request.POST['qcddid']
+    qcwwid = request.POST['qcwwid']
+    qcstate = request.POST['qcstate']
+    qccharger = request.POST['qccharger']
+    qcdemand = request.POST['qcdemand']
+    qcnotes = request.POST['qcnotes']
+    record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
+    return render_to_response('record-creater.html', context_instance=RequestContext(request))
+
+def record_update(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes):
+    ngword = NgWord.objects.get(pk=request.POST['id'])
+    ngword.info = request.POST['info']
+    ngword.name = request.POST['name']
+    ngword.update_date = datetime.datetime.now()
+    ngword.save()
+
+
+def recordlist(request):
+    state = request.GET.get('state')
+    if state == 'pending':
+        pass
+    if state == 'complete':
+        pass
+    if state == 'all':
+        pass
+
+def orderlist(request):
     gcddid = request.POST['gcddid']
     print gcddid
     gcddid = gcddid.replace(" ", "")
@@ -79,28 +117,6 @@ def record_mid_searcher(request):
             return HttpResponse(t.render(c))
     except:
         return render_to_response('record-creater.html', context_instance=RequestContext(request))
-
-
-@csrf_protect
-def record_mid_creater(request):
-    qcddid = request.POST['qcddid']
-    qcwwid = request.POST['qcwwid']
-    qcstate = request.POST['qcstate']
-    qccharger = request.POST['qccharger']
-    qcdemand = request.POST['qcdemand']
-    qcnotes = request.POST['qcnotes']
-    record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
-    return render_to_response('record-creater.html', context_instance=RequestContext(request))
-
-def record_mid_patcher(request):
-    qcddid = request.POST['qcddid']
-    qcwwid = request.POST['qcwwid']
-    qcstate = request.POST['qcstate']
-    qccharger = request.POST['qccharger']
-    qcdemand = request.POST['qcdemand']
-    qcnotes = request.POST['qcnotes']
-    record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
-    return render_to_response('record-patcher.html', context_instance=RequestContext(request))
 
 
 

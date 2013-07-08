@@ -1,0 +1,42 @@
+{% extends "general.html" %}
+{% load staticfiles %}
+
+{% block headercss_1 %}
+{%  endblock %}
+
+{% block navactive %}
+    <li><a href="index">首页</a></li>
+    <li><a href="about">关于我们</a></li>
+    <li><a href="contact">联系我们</a></li>
+    <li><a href="dashboard">仪表盘</a></li>
+    <li class="active"><a href="recordlist?state=pending">售后记录</a></li>
+{% endblock %}
+
+{% block content_subtitle %}
+    <h1>售后记录列表</h1>
+    <p class="lead">此页可以看到售后记录的分页展示。</p>
+{% endblock %}
+
+{% block content_con %}
+    <ul class="thumbnails">
+    {% for ddid in rof_ddid %}
+        <li class="span9">
+            <div class="thumbnail">
+                <div class="caption" contenteditable="true">
+                    <h3>需求：{{ ddid.cdemand }}</h3>
+                    <small>订单号: {{ ddid.cddid }} 旺旺号: {{ ddid.cwwid }}</small>
+                    <br/>
+                    <small>时间： {{ ddid.cdatetime|date:"Y年,n月,j日（周w） P" }} 负责人: {{ ddid.ccharger }}</small>
+                    <small>描述：</small>
+                    <br/><br/>
+                    <div>{{ ddid.cnotes|safe }}</div>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block footerjs_1 %}
+    <script src="{% static "bootstrap-paginator/js/bootstrap-paginator.js" %}"></script>
+{% endblock %}
