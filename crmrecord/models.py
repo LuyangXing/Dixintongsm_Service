@@ -30,3 +30,17 @@ class RecordList(models.Model):
 
     def display_mySafeField2(self):
         return mark_safe(self.ProcessResultsDescription) #{{instance.display_mySafeField}}
+
+# ServiceCode,
+# OrderNo,
+# Authors,
+# ProblemSummary,
+# ProblemDescription,
+# EmergencyTreatment,
+# CallProcessing,
+# CustomerName,
+# Products,
+# State,
+# Head,
+# ProcessResultsSummary,
+# ProcessResultsDescription
