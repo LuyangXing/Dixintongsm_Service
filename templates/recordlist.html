@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block headercss_1 %}
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
 {%  endblock %}
 
 {% block navactive %}
@@ -19,24 +20,59 @@
 
 {% block content_con %}
     <ul class="thumbnails">
-    {% for ddid in rof_ddid %}
+    {% for results in dbresults %}
         <li class="span9">
             <div class="thumbnail">
                 <div class="caption" contenteditable="true">
-                    <h3>需求：{{ ddid.cdemand }}</h3>
-                    <small>订单号: {{ ddid.cddid }} 旺旺号: {{ ddid.cwwid }}</small>
+                    <h3>服务编码：{{ results.ServiceCode }}</h3>
+                    <small>订单号:{{ results.OrderNo }}</small>
+                    <button onclick="javascript:window.location.href='orderlist?orderno={{ results.OrderNo }}'" class="btn btn-success">查看该订单售后</button>
                     <br/>
-                    <small>时间： {{ ddid.cdatetime|date:"Y年,n月,j日（周w） P" }} 负责人: {{ ddid.ccharger }}</small>
+                    <small>时间：{{ results.DateTime|date:"Y年n月j日（周w）P" }} 负责人:{{ results.Authors }}</small>
                     <small>描述：</small>
                     <br/><br/>
-                    <div>{{ ddid.cnotes|safe }}</div>
+                    <div>{{ results.ProblemDescription|safe }}</div>
                 </div>
             </div>
         </li>
     {% endfor %}
     </ul>
+
+
+    <div id="example"></div>
+    <script type='text/javascript'>
+        var options = {
+            currentPage: 3,
+            totalPages: 10
+        };
+        $('#example').bootstrapPaginator(options);
+    </script>
+
+    <!-- 代码片段 分页控件 -->
+    <div class="span12">
+    <div id="page1"></div>
+    </div>
+
+    <!-- 代码片段 查询结果 -->
+    <div class="span12">
+    <table class="table table-hover table-striped">
+    ...
+    </table>
+    </div>
+    <script type="text/javascript">
+    //分页功能
+    var options = {
+    currentPage:2,
+    totalPages:5,
+    numberOfPages:5
+    }
+    $('#page1').bootstrapPaginator(options);
+    </script>
+
 {% endblock %}
 
 {% block footerjs_1 %}
     <script src="{% static "bootstrap-paginator/js/bootstrap-paginator.js" %}"></script>
 {% endblock %}
+
+{#https://pypi.python.org/pypi/django-pagination#downloads#}

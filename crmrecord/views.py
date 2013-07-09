@@ -56,18 +56,11 @@ def creater(request):
     ProblemDescription = request.POST['ProblemDescription']
     EmergencyTreatment = request.POST['EmergencyTreatment']
     CallProcessing = request.POST['CallProcessing']
-    CustomerName = request.POST['CustomerName']
-    Products = request.POST['Products']
     State = request.POST['State']
-    # Head = request.POST['Head']
-    # ProcessResultsSummary = request.POST['ProcessResultsSummary']
-    # ProcessResultsDescription = request.POST['ProcessResultsDescription']
-    record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTreatment,
-               CallProcessing, CustomerName, Products, State)  #, Head, ProcessResultsSummary, ProcessResultsDescription)
+    record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTreatment,CallProcessing, State)
     return render_to_response('recordcreate.html', context_instance=RequestContext(request))
 
-def record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTreatment,
-               CallProcessing, CustomerName, Products, State):  #, Head, ProcessResultsSummary, ProcessResultsDescription):
+def record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTreatment, CallProcessing, State):
     p = RecordList(OrderNo=OrderNo,
                    Authors=Authors,
                    ProblemSummary=ProblemSummary,
@@ -75,63 +68,61 @@ def record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTr
                    DateTime=datetime.datetime.now(),
                    EmergencyTreatment=EmergencyTreatment,
                    CallProcessing=CallProcessing,
-                   CustomerName=CustomerName,
-                   Products=Products,
                    State=State,
-                   DateTime2=datetime.datetime.now()) #,
-                   # Head=Head,
-                   # ProcessResultsSummary=ProcessResultsSummary,
-                   # ProcessResultsDescription=ProcessResultsDescription,
-                   # DateTime2=datetime.datetime.now())
+                   DateTime2=datetime.datetime.now())
     p.save()
 
+@login_required(login_url='/index')
+def recordlist(request):
+    state = request.GET.get('state')
+    if state == 'pending':
+        dbresults = RecordList.objects.filter(State=0)
+        t = loader.get_template("recordlist.html")
+        c = RequestContext(request,{'dbresults': dbresults})
+        return HttpResponse(t.render(c))
+    if state == 'complete':
+        dbresults = RecordList.objects.filter(State=1)
+        t = loader.get_template("recordlist.html")
+        c = RequestContext(request,{'dbresults': dbresults})
+        return HttpResponse(t.render(c))
+    if state == 'all':
+        dbresults = RecordList.objects.all()
+        t = loader.get_template("recordlist.html")
+        c = RequestContext(request,{'dbresults': dbresults})
+        return HttpResponse(t.render(c))
 
-# def recordpatch(request):
-#     return render_to_response('recordpatch.html', context_instance=RequestContext(request))
-#
-# @csrf_protect
-# def patcher(request):
-#     qcddid = request.POST['qcddid']
-#     qcwwid = request.POST['qcwwid']
-#     qcstate = request.POST['qcstate']
-#     qccharger = request.POST['qccharger']
-#     qcdemand = request.POST['qcdemand']
-#     qcnotes = request.POST['qcnotes']
-#     record_add(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes)
-#     return render_to_response('record-creater.html', context_instance=RequestContext(request))
-#
-# def record_update(qcddid,qcwwid,qcstate,qccharger,qcdemand,qcnotes):
-#     ngword = NgWord.objects.get(pk=request.POST['id'])
-#     ngword.info = request.POST['info']
-#     ngword.name = request.POST['name']
-#     ngword.update_date = datetime.datetime.now()
-#     ngword.save()
+@login_required(login_url='/index')
+def orderlist(request):
+    OrderNo = request.GET.get('orderno')
+    dbresults = RecordList.objects.filter(OrderNo=OrderNo)
+    t = loader.get_template("orderlist.html")
+    c = RequestContext(request,{'dbresults': dbresults})
+    return HttpResponse(t.render(c))
 
-# @login_required(login_url='/index')
-# def recordlist(request):
-#     state = request.GET.get('state')
-#     if state == 'pending':
-#         pass
-#     if state == 'complete':
-#         pass
-#     if state == 'all':
-#         pass
-#
-# def orderlist(request):
-#     gcddid = request.POST['gcddid']
-#     print gcddid
-#     gcddid = gcddid.replace(" ", "")
-#     print gcddid
-#     rof_ddid = RecordList.objects.filter(cddid__contains=gcddid)
-#     try:
-#         if gcddid == '':
-#             return render_to_response('record-creater.html', context_instance=RequestContext(request))
-#         elif gcddid in rof_ddid[0].cddid:
-#             t = loader.get_template("record-patcher.html")
-#             c = RequestContext(request,{'rof_ddid': rof_ddid})
-#             return HttpResponse(t.render(c))
-#     except:
-#         return render_to_response('record-creater.html', context_instance=RequestContext(request))
+def recordpatch(request):
+    servicecode = request.GET.get('servicecode')
+    t = loader.get_template("recordpatch.html")
+    c = RequestContext(request,{'servicecode': servicecode})
+    return HttpResponse(t.render(c))
 
+@csrf_protect
+def patcher(request):
+    ServiceCode = request.POST['ServiceCode']
+    State = request.POST['State']
+    Head = request.POST['Head']
+    ProcessResultsSummary = request.POST['ProcessResultsSummary']
+    ProcessResultsDescription = request.POST['ProcessResultsDescription']
+    record_update(ServiceCode, State, Head, ProcessResultsSummary, ProcessResultsDescription)
+    return render_to_response('dashboard.html', context_instance=RequestContext(request))
+
+def record_update(servicecode, State, Head, ProcessResultsSummary, ProcessResultsDescription):
+    ServiceOrder = RecordList.objects.get(ServiceCode=servicecode)
+    ServiceOrder.State=State
+    ServiceOrder.DateTime2=datetime.datetime.now()
+    ServiceOrder.Head=Head
+    ServiceOrder.ProcessResultsSummary=ProcessResultsSummary
+    ServiceOrder.ProcessResultsDescription=ProcessResultsDescription
+    print 123,ServiceOrder.ProcessResultsDescription
+    ServiceOrder.save()
 
 

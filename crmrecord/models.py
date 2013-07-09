@@ -15,8 +15,6 @@ class RecordList(models.Model):
 
     EmergencyTreatment = models.IntegerField(max_length=1)
     CallProcessing = models.IntegerField(max_length=1)
-    CustomerName = models.CharField(max_length=50, blank=True)
-    Products = models.CharField(max_length=50, blank=True)
 
     State = models.IntegerField(max_length=1)
 

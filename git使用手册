@@ -1,0 +1,42 @@
+【克隆项目到本地】
+git clone git@github.com:LuyangXing/bjdxtmall.git
+
+【添加文件与注释】
+git commit -a -m 'made a change'
+等于
+git add .
+git commit -m 'new update!'
+
+【提交内容】
+git push origin master
+
+【分支新建与切换】
+git checkout -b debug
+等于
+git branch debug
+git checkout debug
+
+【切换回主分支】
+git checkout master
+
+【合并分支】
+git checkout master
+git merge debug
+
+【删除分支】
+git branch -d debug
+
+【分支的查看】
+git branch -v
+
+【创建git环境】
+git init
+git remote add origin git@github.com:LuyangXing/bjdxtmall.git
+git pull origin master
+
+git add . 
+git commit -m 'commit'
+git push origin master
+
+git branch debug
+git checkout debug

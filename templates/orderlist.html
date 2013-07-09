@@ -19,21 +19,64 @@
 
 {% block content_con %}
     <ul class="thumbnails">
-        {% for ddid in rof_ddid %}
-            <li class="span9">
-                <div class="thumbnail">
-                    <div class="caption" contenteditable="true">
-                        <h3>需求：{{ ddid.cdemand }}</h3>
-                        <small>订单号: {{ ddid.cddid }} 旺旺号: {{ ddid.cwwid }}</small>
-                        <br/>
-                        <small>时间： {{ ddid.cdatetime|date:"Y年,n月,j日（周w） P" }} 负责人: {{ ddid.ccharger }}</small>
-                        <small>描述：</small>
-                        <br/><br/>
-                        <div>{{ ddid.cnotes|safe }}</div>
-                    </div>
+    {% for results in dbresults reversed %}
+        <li class="span9">
+            <div class="thumbnail">
+                <div class="caption">
+                    {% if results.State == 0 %}
+                        <span class="label label-warning">未处理</span>
+                    {% else %}
+                        <span class="label">已处理</span>
+                    {% endif %}
+                    {% if results.State == 0 %}
+                        <button class="pull-right btn btn-success" onclick="javascript:window.location.href='recordpatch?servicecode={{ results.ServiceCode }}'">处理售后</button>
+                    {% else %}
+                        <button class="pull-right btn" onclick="javascript:window.location.href='recordpatch?servicecode={{ results.ServiceCode }}'" disabled>处理售后</button>
+                    {% endif %}
+
+                    <h3>订单编号：{{ results.OrderNo }} &nbsp;&nbsp; 服务编码：{{ results.ServiceCode }}</h3>
+                    <small>提交人：{{ results.Authors }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 提交时间：{{ results.DateTime|date:"Y年n月j日（周w）P" }}</small>
+                    <br/><br/>
+                    <strong>问题摘要：{{ results.ProblemSummary }}</strong>
                 </div>
-            </li>
-        {% endfor %}
+
+                {% if results.State == 0 %}
+                    {% if results.EnergencyTreatment == 1 or results.CallProcessing == 1 %}
+                    <div class="alert">
+                        {% if results.EnergencyTreatment == 1 %}
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;紧急事件！！！！</strong>
+                        {% endif %}
+                        {% if results.CallProcessing == 1 %}
+                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;需要电话处理</strong>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                {% endif %}
+
+                {% if results.ProblemDescription == " " %}
+                    <div class="well">
+                        {{ results.ProblemDescription|safe }}
+                    </div>
+                {% endif %}
+
+                {% if results.State == 1 %}
+                    <hr>
+                    <div class="caption">
+                        <small>处理人：{{ results.Head }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 处理时间：{{ results.DateTime2|date:"Y年n月j日（周w）P" }}</small>
+                        <br/><br/>
+                        <strong>处理摘要：{{ results.ProcessResultsSummary }}</strong>
+                    </div>
+
+                    {% if results.ProblemDescription == " " %}
+                        <div class="well">
+                            {{ results.ProcessResultsDescription|safe }}
+                        </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </li>
+        <li class="divider"></li>
+    {% endfor %}
     </ul>
 {% endblock %}
 

@@ -49,23 +49,22 @@
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label">紧急处理</label>
+                <label class="control-label">紧急情况</label>
                 <div class="controls">
-                    <label class="checkbox"><input type="checkbox" name="EmergencyTreatment" value=1>紧急处理</label>
-                    <label class="checkbox"><input type="checkbox" name="CallProcessing" value=1>电话处理</label>
-              </div>
+                    <label class="radio"><input type="radio" name="EmergencyTreatment" value=0 checked>一般</label>
+                    <label class="radio"><input type="radio" name="EmergencyTreatment" value=1>紧急</label>
+                </div>
             </div>
             <div class="control-group">
-                <label class="control-label">涉及旺旺名</label>
-                <div class="controls"><input name="CustomerName" class="input-xlarge" type="text"></div>
-            </div>
-            <div class="control-group">
-                <label class="control-label">涉及产品名</label>
-                <div class="controls"><input name="Products" class="input-xlarge" type="text"></div>
+                <label class="control-label">是否电话</label>
+                <div class="controls">
+                    <label class="radio"><input type="radio" name="CallProcessing" value=0 checked>不用电话</label>
+                    <label class="radio"><input type="radio" name="CallProcessing" value=1>电话处理</label>
+                </div>
             </div>
 
             <div class="control-group">
-                <label class="control-label">问题描述</label>
+                <label class="control-label">问题补充</label>
                 <div class="controls"></div>
             </div>
             <div class="hero-unit">
@@ -110,7 +109,7 @@
                         <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
                     </div>
                 </div>
-                <div id="editor">请输入内容……</div>
+                <div id="editor"></div>
                 <input name="ProblemDescription" type="hidden">
             </div>
 

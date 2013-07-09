@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.conf.urls.static import static
 
-from crmrecord.views import index, dashboard, recordcreate, creater #, recordpatch, patcher, recordlist, orderlist
+from crmrecord.views import index, dashboard, recordcreate, creater, recordlist, orderlist, recordpatch, patcher
 from crmrecord.views import login_v, logout_v
 
 
@@ -29,10 +29,10 @@ urlpatterns = patterns('',
     (r'^dashboard$', dashboard),
     (r'^recordcreate$', recordcreate),
     url(r'^creater$',view=creater, name="creater"),
-    # (r'^recordpatch$', recordpatch),
-    # url(r'^patcher$',view=patcher, name="patcher"),
-    # (r'^recordlist$', recordlist),
-    # (r'orderlist$', orderlist),
+    (r'^recordpatch$', recordpatch),
+    url(r'^patcher$',view=patcher, name="patcher"),
+    (r'^recordlist$', recordlist),
+    (r'orderlist$', orderlist),
 
 )
 
