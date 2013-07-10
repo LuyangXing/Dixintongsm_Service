@@ -60,7 +60,8 @@ def creater(request):
     CallProcessing = request.POST['CallProcessing']
     State = request.POST['State']
     record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTreatment,CallProcessing, State)
-    return render_to_response('recordcreate.html', context_instance=RequestContext(request))
+    return HttpResponseRedirect('recordlist')
+#     return HttpResponseRedirect('%s' % next)
 
 def record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTreatment, CallProcessing, State):
     p = RecordList(OrderNo=OrderNo,
