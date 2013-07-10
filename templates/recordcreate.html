@@ -13,7 +13,7 @@
     <li><a href="about">关于我们</a></li>
     <li><a href="contact">联系我们</a></li>
     <li><a href="dashboard">仪表盘</a></li>
-    <li class="active"><a href="recordlist?state=pending">售后记录</a></li>
+    <li class="active"><a href="recordlist">售后记录</a></li>
 {% endblock %}
 
 {% block content_subtitle %}
@@ -31,15 +31,21 @@
 
             <div class="control-group">
                 <label class="control-label">订单号</label>
-                <div class="controls"><input name="OrderNo" class="input-xlarge" type="text"></div>
+                <div class="controls"><input name="OrderNo" class="input-xlarge" required="required" type="text">
+                    <span class="help-inline">*必填项，淘宝订单号</span>
+                </div>
             </div>
             <div class="control-group">
                 <label class="control-label">提交人</label>
-                <div class="controls"><input name="Authors" class="input-xlarge" type="text"></div>
+                <div class="controls"><input name="Authors" class="input-xlarge" required="required" type="text">
+                    <span class="help-inline">*必填项，5个汉字以内</span>
+                </div>
             </div>
             <div class="control-group">
                 <label class="control-label">问题描述</label>
-                <div class="controls"><input name="ProblemSummary" class="input-xlarge" type="text"></div>
+                <div class="controls"><input name="ProblemSummary" class="input-xlarge" required="required" type="text">
+                    <span class="help-inline">*必填项，25个汉字以内</span>
+                </div>
             </div>
             <div class="control-group">
                 <label class="control-label">订单状态</label>

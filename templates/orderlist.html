@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block headercss_1 %}
+    <link href="{% static "jPages/jPages.css" %}" rel="stylesheet">
 {%  endblock %}
 
 {% block navactive %}
@@ -9,7 +10,7 @@
     <li><a href="about">关于我们</a></li>
     <li><a href="contact">联系我们</a></li>
     <li><a href="dashboard">仪表盘</a></li>
-    <li class="active"><a href="recordlist?state=pending">售后记录</a></li>
+    <li class="active"><a href="recordlist">售后记录</a></li>
 {% endblock %}
 
 {% block content_subtitle %}
@@ -18,7 +19,9 @@
 {% endblock %}
 
 {% block content_con %}
-    <ul class="thumbnails">
+
+    <div class="holder"></div>
+    <ul class="thumbnails" id="itemContainer">
     {% for results in dbresults reversed %}
         <li class="span9">
             <div class="thumbnail">
@@ -41,14 +44,16 @@
                 </div>
 
                 {% if results.State == 0 %}
-                    {% if results.EnergencyTreatment == 1 or results.CallProcessing == 1 %}
-                    <div class="alert">
-                        {% if results.EnergencyTreatment == 1 %}
-                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;紧急事件！！！！</strong>
+                    {% if results.EmergencyTreatment == 1 or results.CallProcessing == 1 %}
+                    <div class="alert alert-danger">
+                        <strong>
+                        {% if results.EmergencyTreatment == 1 %}
+                            &nbsp;&nbsp;&nbsp;&nbsp;紧急事件！！！！
                         {% endif %}
                         {% if results.CallProcessing == 1 %}
-                            <strong>&nbsp;&nbsp;&nbsp;&nbsp;需要电话处理</strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp;需要电话处理
                         {% endif %}
+                        </strong>
                     </div>
                     {% endif %}
                 {% endif %}
@@ -75,10 +80,20 @@
                 {% endif %}
             </div>
         </li>
-        <li class="divider"></li>
     {% endfor %}
     </ul>
+
 {% endblock %}
 
 {% block footerjs_1 %}
+
+    <script src="{% static "jPages/jPages.js" %}"></script>
+    <script type="text/javascript">
+        $(function(){
+          $("div.holder").jPages({
+            containerID : "itemContainer"
+          });
+        });
+    </script>
+
 {% endblock %}

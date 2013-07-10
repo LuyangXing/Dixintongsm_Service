@@ -13,6 +13,7 @@ from crmrecord.models import RecordList
 import datetime
 
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.template import loader
 
 
@@ -51,6 +52,7 @@ def recordcreate(request):
 @csrf_protect
 def creater(request):
     OrderNo = request.POST['OrderNo']
+    OrderNo = OrderNo.replace(" ", "")
     Authors = request.POST['Authors']
     ProblemSummary = request.POST['ProblemSummary']
     ProblemDescription = request.POST['ProblemDescription']
@@ -75,18 +77,18 @@ def record_add(OrderNo, Authors, ProblemSummary, ProblemDescription, EmergencyTr
 @login_required(login_url='/index')
 def recordlist(request):
     state = request.GET.get('state')
-    if state == 'pending':
-        dbresults = RecordList.objects.filter(State=0)
-        t = loader.get_template("recordlist.html")
-        c = RequestContext(request,{'dbresults': dbresults})
-        return HttpResponse(t.render(c))
     if state == 'complete':
         dbresults = RecordList.objects.filter(State=1)
         t = loader.get_template("recordlist.html")
         c = RequestContext(request,{'dbresults': dbresults})
         return HttpResponse(t.render(c))
-    if state == 'all':
+    elif state == 'all':
         dbresults = RecordList.objects.all()
+        t = loader.get_template("recordlist.html")
+        c = RequestContext(request,{'dbresults': dbresults})
+        return HttpResponse(t.render(c))
+    else:
+        dbresults = RecordList.objects.filter(State=0)
         t = loader.get_template("recordlist.html")
         c = RequestContext(request,{'dbresults': dbresults})
         return HttpResponse(t.render(c))
@@ -113,7 +115,7 @@ def patcher(request):
     ProcessResultsSummary = request.POST['ProcessResultsSummary']
     ProcessResultsDescription = request.POST['ProcessResultsDescription']
     record_update(ServiceCode, State, Head, ProcessResultsSummary, ProcessResultsDescription)
-    return render_to_response('dashboard.html', context_instance=RequestContext(request))
+    return HttpResponseRedirect('recordlist')
 
 def record_update(servicecode, State, Head, ProcessResultsSummary, ProcessResultsDescription):
     ServiceOrder = RecordList.objects.get(ServiceCode=servicecode)
@@ -122,7 +124,6 @@ def record_update(servicecode, State, Head, ProcessResultsSummary, ProcessResult
     ServiceOrder.Head=Head
     ServiceOrder.ProcessResultsSummary=ProcessResultsSummary
     ServiceOrder.ProcessResultsDescription=ProcessResultsDescription
-    print 123,ServiceOrder.ProcessResultsDescription
     ServiceOrder.save()
 
 

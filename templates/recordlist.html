@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block headercss_1 %}
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="{% static "jPages/jPages.css" %}" rel="stylesheet">
 {%  endblock %}
 
 {% block navactive %}
@@ -10,7 +10,7 @@
     <li><a href="about">关于我们</a></li>
     <li><a href="contact">联系我们</a></li>
     <li><a href="dashboard">仪表盘</a></li>
-    <li class="active"><a href="recordlist?state=pending">售后记录</a></li>
+    <li class="active"><a href="recordlist">售后记录</a></li>
 {% endblock %}
 
 {% block content_subtitle %}
@@ -19,60 +19,83 @@
 {% endblock %}
 
 {% block content_con %}
-    <ul class="thumbnails">
-    {% for results in dbresults %}
+
+    <div class="holder"></div>
+    <ul class="thumbnails" id="itemContainer">
+    {% for results in dbresults reversed %}
         <li class="span9">
             <div class="thumbnail">
-                <div class="caption" contenteditable="true">
-                    <h3>服务编码：{{ results.ServiceCode }}</h3>
-                    <small>订单号:{{ results.OrderNo }}</small>
-                    <button onclick="javascript:window.location.href='orderlist?orderno={{ results.OrderNo }}'" class="btn btn-success">查看该订单售后</button>
-                    <br/>
-                    <small>时间：{{ results.DateTime|date:"Y年n月j日（周w）P" }} 负责人:{{ results.Authors }}</small>
-                    <small>描述：</small>
+                <div class="caption">
+                    {% if results.State == 0 %}
+                        <span class="label label-warning">未处理</span>
+                    {% else %}
+                        <span class="label">已处理</span>
+                    {% endif %}
+                    {% if results.State == 0 %}
+                        <button class="pull-right btn btn-success" onclick="javascript:window.location.href='recordpatch?servicecode={{ results.ServiceCode }}'">处理售后</button>
+                    {% else %}
+                        <button class="pull-right btn" onclick="javascript:window.location.href='recordpatch?servicecode={{ results.ServiceCode }}'" disabled>处理售后</button>
+                    {% endif %}
+                    <button class="btn btn-small btn-primary" onclick="javascript:window.location.href='orderlist?orderno={{ results.OrderNo }}'">该订单历史记录</button>
+                    <h4>订单编号：{{ results.OrderNo }} &nbsp;&nbsp; 服务编码：{{ results.ServiceCode }}</h4>
+                    <small>提交人：{{ results.Authors }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 提交时间：{{ results.DateTime|date:"Y年n月j日（周w）P" }}</small>
                     <br/><br/>
-                    <div>{{ results.ProblemDescription|safe }}</div>
+                    <strong>问题摘要：{{ results.ProblemSummary }}</strong>
                 </div>
+
+                {% if results.State == 0 %}
+                    {% if results.EmergencyTreatment == 1 or results.CallProcessing == 1 %}
+                    <div class="alert alert-danger">
+                        <strong>
+                        {% if results.EmergencyTreatment == 1 %}
+                            &nbsp;&nbsp;&nbsp;&nbsp;紧急事件！！！！
+                        {% endif %}
+                        {% if results.CallProcessing == 1 %}
+                            &nbsp;&nbsp;&nbsp;&nbsp;需要电话处理
+                        {% endif %}
+                        </strong>
+                    </div>
+                    {% endif %}
+                {% endif %}
+
+                {% if results.ProblemDescription == " " %}
+                    <div class="well">
+                        {{ results.ProblemDescription|safe }}
+                    </div>
+                {% endif %}
+
+                {% if results.State == 1 %}
+                    <hr>
+                    <div class="caption">
+                        <small>处理人：{{ results.Head }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 处理时间：{{ results.DateTime2|date:"Y年n月j日（周w）P" }}</small>
+                        <br/><br/>
+                        <strong>处理摘要：{{ results.ProcessResultsSummary }}</strong>
+                    </div>
+
+                    {% if results.ProblemDescription == " " %}
+                        <div class="well">
+                            {{ results.ProcessResultsDescription|safe }}
+                        </div>
+                    {% endif %}
+                {% endif %}
             </div>
         </li>
     {% endfor %}
     </ul>
 
-
-    <div id="example"></div>
-    <script type='text/javascript'>
-        var options = {
-            currentPage: 3,
-            totalPages: 10
-        };
-        $('#example').bootstrapPaginator(options);
-    </script>
-
-    <!-- 代码片段 分页控件 -->
-    <div class="span12">
-    <div id="page1"></div>
-    </div>
-
-    <!-- 代码片段 查询结果 -->
-    <div class="span12">
-    <table class="table table-hover table-striped">
-    ...
-    </table>
-    </div>
-    <script type="text/javascript">
-    //分页功能
-    var options = {
-    currentPage:2,
-    totalPages:5,
-    numberOfPages:5
-    }
-    $('#page1').bootstrapPaginator(options);
-    </script>
-
 {% endblock %}
+
 
 {% block footerjs_1 %}
-    <script src="{% static "bootstrap-paginator/js/bootstrap-paginator.js" %}"></script>
+
+    <script src="{% static "jPages/jPages.js" %}"></script>
+    <script type="text/javascript">
+        $(function(){
+          $("div.holder").jPages({
+            containerID : "itemContainer"
+          });
+        });
+    </script>
+
 {% endblock %}
 
-{#https://pypi.python.org/pypi/django-pagination#downloads#}
