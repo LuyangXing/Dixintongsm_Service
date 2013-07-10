@@ -4,7 +4,7 @@
     <list default="true" id="fd078ccb-4064-425c-91aa-8790edc5e082" name="Default" comment="" />
     <ignored path="bjdxtmall.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373438908471" ignored="false" />
+    <file path="/Dummy.txt" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373445771120" ignored="false" />
     <file path="/settings.py" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373267464488" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/base.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318404164" ignored="false" />
     <file path="$PROJECT_DIR$/../mypj/templates/test.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372318811261" ignored="false" />
@@ -23,7 +23,7 @@
     <file path="/record-creater.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1372738495013" ignored="false" />
     <file path="/general.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373274987798" ignored="false" />
     <file path="/recordlist.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373443549671" ignored="false" />
-    <file path="/orderlist.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373433416466" ignored="false" />
+    <file path="/orderlist.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373445891091" ignored="false" />
     <file path="/recordcreate.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373436026860" ignored="false" />
     <file path="/recordpatch.html" changelist="fd078ccb-4064-425c-91aa-8790edc5e082" time="1373443760322" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,10 +50,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="43" selection-start="4648" selection-end="4648" vertical-scroll-proportion="0.4829932">
+            <state line="127" column="0" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderlist.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/orderlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="26" selection-start="3166" selection-end="3166" vertical-scroll-proportion="0.5225">
               <folding />
             </state>
           </provider>
@@ -63,26 +72,6 @@
         <entry file="file://$PROJECT_DIR$/bjdxtmall/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recordcreate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/recordcreate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="103" selection-start="6815" selection-end="6815" vertical-scroll-proportion="-8.821428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recordpatch.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/recordpatch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="106" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-3.4285715">
               <folding />
             </state>
           </provider>
@@ -121,12 +110,12 @@
         <option value="$PROJECT_DIR$/templates/general.html" />
         <option value="$PROJECT_DIR$/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/bjdxtmall/settings.py" />
-        <option value="$PROJECT_DIR$/templates/orderlist.html" />
         <option value="$PROJECT_DIR$/templates/recordlist.html" />
         <option value="$PROJECT_DIR$/templates/recordpatch.html" />
         <option value="$PROJECT_DIR$/templates/recordcreate.html" />
         <option value="$PROJECT_DIR$/bjdxtmall/urls.py" />
         <option value="$PROJECT_DIR$/crmrecord/views.py" />
+        <option value="$PROJECT_DIR$/templates/orderlist.html" />
       </list>
     </option>
   </component>
@@ -230,14 +219,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -278,29 +267,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bjdxtmall" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,6 +288,29 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bjdxtmall" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -433,7 +422,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20402561" sideWeight="0.8718381" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2562674" sideWeight="0.80895007" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26183844" sideWeight="0.80895007" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17728055" sideWeight="0.444668" order="7" side_tool="true" content_ui="tabs" />
@@ -567,16 +556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/jPages/jPages.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/orderlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1007" selection-end="1464" vertical-scroll-proportion="-4.75">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/recordlist.html">
@@ -588,7 +568,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crmrecord/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+        <state line="11" column="52" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="0" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recordcreate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="103" selection-start="6815" selection-end="6815" vertical-scroll-proportion="0.037181996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recordpatch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="106" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.037181996">
           <folding />
         </state>
       </provider>
@@ -596,29 +595,13 @@
     <entry file="file://$PROJECT_DIR$/bjdxtmall/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="48" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recordcreate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="103" selection-start="6815" selection-end="6815" vertical-scroll-proportion="-8.821428">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recordpatch.html">
+    <entry file="file://$PROJECT_DIR$/templates/orderlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="106" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-3.4285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crmrecord/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="43" selection-start="4648" selection-end="4648" vertical-scroll-proportion="0.4829932">
+        <state line="73" column="26" selection-start="3166" selection-end="3166" vertical-scroll-proportion="0.5225">
           <folding />
         </state>
       </provider>

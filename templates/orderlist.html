@@ -58,7 +58,8 @@
                     {% endif %}
                 {% endif %}
 
-                {% if results.ProblemDescription == " " %}
+                {% if results.ProblemDescription == "" %}
+                {% else %}
                     <div class="well">
                         {{ results.ProblemDescription|safe }}
                     </div>
@@ -72,7 +73,8 @@
                         <strong>处理摘要：{{ results.ProcessResultsSummary }}</strong>
                     </div>
 
-                    {% if results.ProblemDescription == " " %}
+                    {% if results.ProblemDescription == "" %}
+                    {% else %}
                         <div class="well">
                             {{ results.ProcessResultsDescription|safe }}
                         </div>
