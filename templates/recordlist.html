@@ -37,6 +37,9 @@
                         <button class="pull-right btn" onclick="javascript:window.location.href='recordpatch?servicecode={{ results.ServiceCode }}'" disabled>处理售后</button>
                     {% endif %}
                     <button class="btn btn-small btn-primary" onclick="javascript:window.location.href='orderlist?orderno={{ results.OrderNo }}'">该订单历史记录</button>
+                    {% if results.State == 0 %}
+                    <button class="btn btn-small btn-danger" onclick="javascript:window.location.href='deleter?servicecode={{ results.ServiceCode }}'">删除</button>
+                    {% endif %}
                     <h4>订单编号：{{ results.OrderNo }} &nbsp;&nbsp; 服务编码：{{ results.ServiceCode }}</h4>
                     <small>提交人：{{ results.Authors }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 提交时间：{{ results.DateTime|date:"Y年n月j日（周w）P" }}</small>
                     <br/><br/>

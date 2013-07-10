@@ -126,4 +126,8 @@ def record_update(servicecode, State, Head, ProcessResultsSummary, ProcessResult
     ServiceOrder.ProcessResultsDescription=ProcessResultsDescription
     ServiceOrder.save()
 
-
+def deleter(request):
+    servicecode = request.GET.get('servicecode')
+    p = RecordList.objects.get(ServiceCode=servicecode)
+    p.delete()
+    return HttpResponseRedirect('recordlist')
